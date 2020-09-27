@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Fitness</title>
+</head>
+
+<style>
+   body{
+       font-family: Baloo Tamma 2;
+       color: white;
+       background-color: rgb(172, 41, 41);
+   }
+   .left{
+       display: inline;
+       position: absolute;
+      /* left: 34px;
+       top: 20px;*/
+   }
+   .mid{
+       display: block;
+       width: 34%;
+       margin: 22px auto;
+   }
+   .right{
+       display: inline;
+       position: absolute;
+       padding: 5px;
+       right: 34px;
+       top: 33px;      
+   }
+   .navbar{
+       display: inline-block;
+   }
+   .navbar li{
+       display: inline-block;
+       font-size: 23px;
+   }
+   .navbar li a{
+       color: white;
+       text-decoration: none;
+       padding: 9px 11px;
+   }
+   .navbar li a:hover, .navbar li a.active{
+       text-decoration: underline;
+       color: rgb(161, 73, 110);     
+   }
+   .left img{
+       width: 106px;
+       filter: invert(100%);
+   }
+   .btn{
+       padding: 0px 9px;
+       margin: 4px 14px;
+       border-radius: 6px;
+       cursor: pointer;
+       font-size: 20px;
+   }
+.btn:hover{
+    background-color: violet;
+}
+.container{
+    border: white solid 2px;
+    border-radius: 30px;
+    padding: 60px;
+    margin: 80px;
+    height: 300px;
+    width: 480px;
+}
+.form-group input{
+    border: 2px solid white;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 8px;
+    padding: 6px;
+    width: 440px;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    text-align: center;
+    width: 444px;
+    padding: 8px;
+    color: rgb(55, 206, 143);
+}
+</style>
+<body>
+    <header class="header">
+ <!--Left Box logo-->
+ <div class="left">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOBIEGYDGYnR3YQa492OyHhzn8tXehXyaygnWxOF6RlbVzCOg6&usqp=CAU" alt="">
+</div>
+ <!--Mid Box logo-->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="abhik02.html" class="action">Home</a></li>
+            <li><a href="abhik03.html" class="action">About</a></li>
+            <li><a href="abhik04.html" class="action">Fitness</a></li>
+            <li><a href="abhik05.html" class="action">Contact Us</a></li>
+        </ul>
+    </div>
+ <!--Right Box logo-->
+    <div class="right">
+      <button class="btn">Email</button>
+      <button class="btn">Call Us</button>
+</div>
+    </header>
+  <div class="container">
+      <h1>Join the best Gym</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Mobile No">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Address">
+        </div>
+        <button class="btn">Submit</button>
+      </form>
+  </div>
+</body>
+</html>
